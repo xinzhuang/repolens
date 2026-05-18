@@ -20,16 +20,21 @@
 ### 安装
 
 ```bash
-# macOS / Linux — 推荐 Homebrew
-brew tap xinzhuang/tap
-brew install repolens
+# macOS / Linux — 一键安装
+curl -fsSL https://raw.githubusercontent.com/xinzhuang/repolens/main/scripts/install.sh | bash
 ```
 
 <details>
 <summary>其他安装方式</summary>
 
+**Homebrew：**
 ```bash
-# 从源码构建
+brew tap xinzhuang/tap
+brew install repolens
+```
+
+**从源码构建：**
+```bash
 git clone https://github.com/xinzhuang/repolens.git
 cd repolens
 cargo install --path .

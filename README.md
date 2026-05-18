@@ -20,16 +20,21 @@ No more "where did I put that project?" — RepoLens scans your directories, ext
 ### Install
 
 ```bash
-# macOS / Linux — Homebrew (recommended)
-brew tap xinzhuang/tap
-brew install repolens
+# macOS / Linux — one-line install
+curl -fsSL https://raw.githubusercontent.com/xinzhuang/repolens/main/scripts/install.sh | bash
 ```
 
 <details>
 <summary>Other install methods</summary>
 
+**Homebrew:**
 ```bash
-# Build from source
+brew tap xinzhuang/tap
+brew install repolens
+```
+
+**Build from source:**
+```bash
 cargo install --path .
 ```
 
