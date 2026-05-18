@@ -9,7 +9,7 @@ mod display;
 use clap::{Parser, Subcommand};
 
 #[derive(Parser)]
-#[command(name = "repolens", about = "A local git repository search engine")]
+#[command(name = "repolens", about = "A local git repository search engine", version)]
 struct Cli {
     #[command(subcommand)]
     command: Commands,
