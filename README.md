@@ -17,10 +17,29 @@ No more "where did I put that project?" — RepoLens scans your directories, ext
 
 ## 🚀 Quick Start
 
-```bash
-# Install
-cargo install --path .
+### Install
 
+```bash
+# macOS / Linux — Homebrew (recommended)
+brew tap xinzhuang/tap
+brew install repolens
+```
+
+<details>
+<summary>Other install methods</summary>
+
+```bash
+# Build from source
+cargo install --path .
+```
+
+Pre-built binaries are also available from [GitHub Releases](https://github.com/xinzhuang/repolens/releases).
+
+</details>
+
+### Usage
+
+```bash
 # Add your project directories
 repolens config --add-path ~/projects
 repolens config --add-path ~/work
