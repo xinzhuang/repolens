@@ -118,3 +118,13 @@ jobs:
           files: |
             release-assets/*.tar.gz
             release-assets/checksums.txt
+
+      - name: Trigger Homebrew tap update
+        env:
+          GH_TOKEN: ${{ secrets.HOMEBREW_TAP_TOKEN }}
+        run: |
+          TAG="${GITHUB_REF_NAME}"
+          VERSION="${TAG#v}"
+          gh workflow run update-formula.yml \
+            --repo xinzhuang/homebrew-tap \
+            -f version="${VERSION}"
